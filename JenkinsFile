@@ -1,3 +1,9 @@
-withCredentials([usernamePassword(credentialsId: 'harshikagupta23', passwordVariable: 'password', usernameVariable: 'username')]) {
-    // some block
+// withCredentials([usernamePassword(credentialsId: 'harshikagupta23', passwordVariable: 'password', usernameVariable: 'username')]) {
+//     // some block
+// }
+
+node {  
+    stage('Build') { 
+        sh 'node index.js'
+    }
 }
