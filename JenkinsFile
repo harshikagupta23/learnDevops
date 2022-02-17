@@ -1,0 +1,3 @@
+withCredentials([usernamePassword(credentialsId: 'harshikagupta23', passwordVariable: 'password', usernameVariable: 'username')]) {
+    // some block
+}
